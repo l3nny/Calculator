@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="20sp"
+    tools:context=".Calculator"
+    tools:ignore="MissingConstraints">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/display" />
+
+    <TextView
+        android:id="@+id/tvAllClear"
+        style="@style/TButtonStyle"
+        android:text="@string/tv_all_clear"
+        app:layout_constraintEnd_toStartOf="@+id/tvPlusMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/tvPlusMinus"
+        style="@style/TButtonStyle"
+        android:layout_toEndOf="@id/tvAllClear"
+        android:text="@string/tv_plus_minus"
+        app:layout_constraintEnd_toStartOf="@+id/tvModulo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAllClear"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/tvModulo"
+        style="@style/TButtonStyle"
+        android:text="@string/tv_modulo"
+        app:layout_constraintEnd_toStartOf="@+id/tvDivide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPlusMinus"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/tvDivide"
+        style="@style/OButtonStyle"
+        android:text="@string/tv_divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvModulo"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/tvNumberSeven"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_seven"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberEight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAllClear" />
+
+    <TextView
+        android:id="@+id/tvNumberEight"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_eight"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberNine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberSeven"
+        app:layout_constraintTop_toBottomOf="@id/tvPlusMinus" />
+
+    <TextView
+        android:id="@+id/tvNumberNine"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_nine"
+        app:layout_constraintEnd_toStartOf="@+id/tvMultiplication"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberEight"
+        app:layout_constraintTop_toBottomOf="@id/tvModulo" />
+
+    <TextView
+        android:id="@+id/tvMultiplication"
+        style="@style/OButtonStyle"
+        android:text="@string/tv_multiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberNine"
+        app:layout_constraintTop_toBottomOf="@id/tvDivide" />
+
+    <TextView
+        android:id="@+id/tvNumberFour"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_four"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberFive"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberSeven" />
+
+    <TextView
+        android:id="@+id/tvNumberFive"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_five"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberSix"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberFour"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberEight" />
+
+    <TextView
+        android:id="@+id/tvNumberSix"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_six"
+        app:layout_constraintEnd_toStartOf="@+id/tvMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberFive"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberNine" />
+
+    <TextView
+        android:id="@+id/tvMinus"
+        style="@style/OButtonStyle"
+        android:layout_below="@id/tvMultiplication"
+        android:layout_toEndOf="@id/tvNumberSix"
+        android:text="@string/tv_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberSix"
+        app:layout_constraintTop_toBottomOf="@id/tvMultiplication" />
+
+    <TextView
+        android:id="@+id/tvNumberOne"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_one"
+        app:layout_constraintBottom_toTopOf="@+id/tvNumberZero"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberFour" />
+
+    <TextView
+        android:id="@+id/tvNumberTwo"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_two"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberOne"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberFive" />
+
+    <TextView
+        android:id="@+id/tvNumberThree"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_number_three"
+        app:layout_constraintEnd_toStartOf="@+id/tvPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberTwo"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberSix" />
+
+    <TextView
+        android:id="@+id/tvPlus"
+        style="@style/OButtonStyle"
+        android:text="@string/tv_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberThree"
+        app:layout_constraintTop_toBottomOf="@id/tvMinus" />
+
+    <TextView
+        android:id="@+id/tvNumberZero"
+        android:layout_width="@dimen/zeroBW"
+        android:layout_height="@dimen/zeroBH"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_borders"
+        android:gravity="center"
+        android:text="@string/tv_number_zero"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toStartOf="@+id/tvDot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberTwo" />
+
+    <TextView
+        android:id="@+id/tvDot"
+        style="@style/NumberButtonStyle"
+        android:text="@string/tv_dot"
+        app:layout_constraintEnd_toStartOf="@+id/tvEquals"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNumberZero"
+        app:layout_constraintTop_toBottomOf="@id/tvNumberThree" />
+
+    <TextView
+        android:id="@+id/tvEquals"
+        style="@style/OButtonStyle"
+        android:text="@string/tv_equal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDot"
+        app:layout_constraintTop_toBottomOf="@id/tvPlus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

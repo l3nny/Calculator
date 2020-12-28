@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textsize">10sp</dimen>
+    <dimen name="circulesize">30sp</dimen>
+    <dimen name="resultText">20sp</dimen>
+    <dimen name="zeroBW">95sp</dimen>
+    <dimen name="zeroBH">30sp</dimen>
+    <dimen name="resultH">100sp</dimen>
+
+
+</resources>

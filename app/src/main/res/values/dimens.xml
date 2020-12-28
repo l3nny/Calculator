@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize">25sp</dimen>
+
+    <dimen name="circulesize">70sp</dimen>
+
+
+    <dimen name="resultText">300sp</dimen>
+
+    <dimen name="zeroBW">159sp</dimen>
+    <dimen name="zeroBH">70sp</dimen>
+
+    <dimen name="resultH">300sp</dimen>
+
+
+</resources>
