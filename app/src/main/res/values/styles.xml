@@ -6,28 +6,31 @@
         <item name="android:background">@drawable/round_button_t</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">10sp</item>
+
+
         <item name="android:textSize">@dimen/textsize</item>
 
     </style>
 
     <style name="NumberButtonStyle">
+        <item name="android:layout_margin">10sp</item>
         <item name="android:layout_width">@dimen/circulesize</item>
         <item name="android:layout_height">@dimen/circulesize</item>
         <item name="android:background">@drawable/round_borders</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
+
         <item name="android:textSize">@dimen/textsize</item>
     </style>
 
     <style name="OButtonStyle">
+        <item name="android:layout_margin">10sp</item>
         <item name="android:layout_width">@dimen/circulesize</item>
         <item name="android:layout_height">@dimen/circulesize</item>
         <item name="android:background">@drawable/round_button_o</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
         <item name="android:textSize">@dimen/textsize</item>
     </style>
 </resources>
