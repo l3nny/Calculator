@@ -3,7 +3,7 @@
 
     <!-- SP adjusts according the users setting, DP is static -->
 
-    <dimen name="textsize">0sp</dimen>
+    <dimen name="textsize">20sp</dimen>
     <dimen name="resultText">60sp</dimen>
     <dimen name="circulesize">60sp</dimen>
     <dimen name="zeroBW">150sp</dimen>

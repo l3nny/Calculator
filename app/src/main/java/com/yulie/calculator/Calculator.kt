@@ -139,9 +139,10 @@ class Calculator() : AppCompatActivity() {
 
         if (newOperation && !operator) {
             tvResult.text = ""
-        } else {
             newOperation = false
         }
+            newOperation = false
+        
         tvResult.append(string)
 
     }
